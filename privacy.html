@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Privacy Policy - Aura Vent Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- TopNavBar -->
+    <header id="main-header" class="w-full top-0 sticky z-50 glass-nav transition-all duration-300">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="index.html">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-none">
+                    <span class="material-symbols-outlined text-white">cyclone</span>
+                </div>
+                Aura Vent Ltd
+            </a>
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="maintenance.html">Maintenance</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 text-primary dark:text-primary-fixed hover:bg-primary/10 dark:hover:bg-primary-fixed/10 transition-all rounded-none flex items-center justify-center group" aria-label="Toggle Theme">
+                    <span class="material-symbols-outlined transition-transform duration-500 group-hover:rotate-12">dark_mode</span>
+                </button>
+                <!-- Action Button -->
+                <a class="hidden md:inline-flex bg-primary text-white font-headline text-button px-6 py-3 hover:bg-primary-container transition-all items-center justify-center scale-95 hover:scale-100 duration-200 uppercase tracking-widest shadow-none rounded-none" href="contact.html">
+                    Request Quote
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden text-primary dark:text-primary-fixed p-2 rounded-none hover:bg-primary/5 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full md:hidden flex flex-col p-margin-mobile bg-surface-container-lowest dark:bg-inverse-surface transition-transform duration-500 ease-in-out">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-headline text-2xl font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+                <span class="material-symbols-outlined">cyclone</span>
+                Aura Vent Ltd
+            </span>
+            <button id="mobile-menu-close" class="p-2 text-primary dark:text-primary-fixed rounded-none hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="maintenance.html">Maintenance</a>
+            <a class="mobile-nav-link" href="experience.html">Experience</a>
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="mt-auto pb-12">
+            <a class="w-full bg-primary text-white font-headline text-button px-6 py-4 flex items-center justify-center uppercase tracking-widest rounded-none" href="contact.html">
+                Request Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 border-b border-outline-variant/30">
+            <div class="max-w-3xl space-y-6">
+                <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block">Statutory Specification</span>
+                <h1 class="font-headline text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">
+                    Privacy Policy &amp;<br />
+                    <span class="text-primary italic">Data Protection Notice.</span>
+                </h1>
+                <p class="font-body text-body-lg text-on-surface-variant leading-relaxed">
+                    Aura Vent Ltd is firmly committed to absolute operational transparency and rigorous structural data security. This document details our systematic frameworks for harvesting, processing, securing, and retaining your personal data in complete conformance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <!-- Sidebar Metadata Panel -->
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="bg-surface-container-low border border-outline-variant p-8 rounded-none">
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-6">Document Attributes</span>
+                        
+                        <div class="space-y-4 text-sm border-b border-outline-variant/30 pb-6 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Reference:</span>
+                                <span class="font-mono text-on-surface">AVL-POL-PRIV-01</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Effective Date:</span>
+                                <span class="text-on-surface">14 May 2024</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Review Cycle:</span>
+                                <span class="text-on-surface">Annual Specification</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Jurisdiction:</span>
+                                <span class="text-on-surface">UK (ICO Regulated)</span>
+                            </div>
+                        </div>
+
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-3">Data Controller</span>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed mb-6">
+                            <strong>Aura Vent Ltd</strong><br />
+                            Incorporated in England &amp; Wales<br />
+                            Company Registration Number: 08954321<br />
+                            Registered Office: 42 Airflow Way, Precision Park, London, E20 1AV
+                        </p>
+
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-3">Direct Escalation</span>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                            For data inquiries or statutory requests, reach our Privacy Coordinator directly:<br />
+                            <a href="mailto:privacy@auravent.co.uk" class="text-primary font-bold hover:underline">privacy@auravent.co.uk</a>
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-surface-container-lowest border border-outline-variant rounded-none">
+                        <span class="material-symbols-outlined text-primary mb-3 text-3xl block">security</span>
+                        <h4 class="font-headline text-base font-bold text-on-surface mb-2">ICO Registration Notice</h4>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                            Aura Vent Ltd is formally registered as a recognised Data Controller with the Information Commissioner's Office (ICO). We comply fully with statutory guidance regarding data harvesting minimisation and persistent record protection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Policy Content -->
+                <div class="lg:col-span-8 space-y-12">
+                    <!-- Section 1 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">01 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Operational Principles &amp; Scope</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            This Privacy Policy sets out how Aura Vent Ltd ("we", "us", "our") handles the Personal Data of our prospective clients, existing customers, web visitors, and project collaborators. We operate under a central mandate of <strong>Data Minimisation</strong>: we collect only the precise informational vectors required to calibrate, construct, and maintain optimal residential ventilation systems.
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            By utilising our website, commissioning our technical specification quotes, or entering into formal residential maintenance contracts, you acknowledge the processing parameters detailed within this framework.
+                        </p>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 2 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">02 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Categorisation of Harvested Data</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            To ensure mechanical precision in our client delivery, we categorise and process the following specific subsets of data:
+                        </p>
+                        <ul class="space-y-3 font-body text-body-md text-on-surface-variant list-disc list-inside pl-2">
+                            <li>
+                                <strong class="text-on-surface">Identity Vectors:</strong> Full names, professional titles, organisational affiliations (for developers/architects), and client signatures.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Contact Matrices:</strong> Email addresses, telephone routing numbers, site billing addresses, and physical project site coordinates.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Engineering &amp; Site Parameters:</strong> Architectural floor plans, calculated volumetric airflow requirements, MVHR/MEV unit serial numbers, existing HVAC ductwork layouts, access configurations, and historical physical site surveys.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Financial Logistics:</strong> Invoicing histories, formal quotation records, and milestone transaction identifiers. (Note: Direct payment gateway details are tokenised and processed securely by authorised banking partners; we do not store raw cardholder parameters directly).
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Technical Telemetry:</strong> Timestamped IP addresses, user-agent HTTP headers, session durations, and browser interaction patterns mapped during visits to our primary web domain.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 3 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">03 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Methodologies of Capture</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            We capture data streams via transparent, identifiable pathways:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                            <div class="p-6 bg-surface border border-outline-variant/60 rounded-none">
+                                <span class="font-label-technical text-xs text-primary block mb-2">DIRECT INTERACTIONS</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">
+                                    Data entered directly into our high-conversion Request Quote endpoints, technical query contact interfaces, direct email correspondences, telephone scoping logs, and physical commissioning paperwork completed on site.
+                                </p>
+                            </div>
+                            <div class="p-6 bg-surface border border-outline-variant/60 rounded-none">
+                                <span class="font-label-technical text-xs text-primary block mb-2">AUTOMATED RECORDING</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">
+                                    Functional logging technologies, session monitoring scripts, and standard authentication cookies deployed across our infrastructure to ensure structural website reliability, guard against brute-force inquiries, and maintain site responsiveness.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 4 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">04 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Lawful Processing Frameworks</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Under Article 6 of the UK GDPR, we route every processing instance through a verified legal mandate:
+                        </p>
+                        <div class="space-y-4 pt-2">
+                            <div class="border-l-2 border-primary pl-4">
+                                <h4 class="font-headline text-base font-bold text-on-surface">Contract Performance</h4>
+                                <p class="font-body text-sm text-on-surface-variant">
+                                    Processing necessary for delivering bespoke quotations, scheduling engineering deployment, manufacturing physical duct layouts, executing field installations, and running ongoing operational maintenance.
+                                </p>
+                            </div>
+                            <div class="border-l-2 border-primary pl-4">
+                                <h4 class="font-headline text-base font-bold text-on-surface">Legitimate Interests</h4>
+                                <p class="font-body text-sm text-on-surface-variant">
+                                    Evaluating web telemetry to enhance loading speeds, communicating critical system safety or filter replacement intervals to existing asset holders, defending our network against malicious injection attacks, and maintaining corporate accounts.
+                                </p>
+                            </div>
+                            <div class="border-l-2 border-primary pl-4">
+                                <h4 class="font-headline text-base font-bold text-on-surface">Statutory Compliance</h4>
+                                <p class="font-body text-sm text-on-surface-variant">
+                                    Adhering to persistent accounting mandates (e.g., HMRC audit tracking), maintaining health and safety incident reports, and satisfying regulatory verification audits under NICEIC and BESA codes.
+                                </p>
+                            </div>
+                            <div class="border-l-2 border-primary pl-4">
+                                <h4 class="font-headline text-base font-bold text-on-surface">Explicit Consent</h4>
+                                <p class="font-body text-sm text-on-surface-variant">
+                                    Governing direct consumer newsletter subscriptions and elective marketing communications. Consent can be revoked instantly at any phase via integrated opt-out pathways.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 5 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">05 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Third-Party Interfacing &amp; Transmission</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Aura Vent Ltd strictly rejects the monetisation or leasing of client databases. Data vectors are shared exclusively under rigorous, contractually bound confidentiality pacts with verified support partners:
+                        </p>
+                        <ul class="space-y-2 font-body text-body-md text-on-surface-variant list-disc list-inside pl-2">
+                            <li>
+                                <strong class="text-on-surface">Form Processing Nodes:</strong> Direct messaging inputs pass through encrypted transit layers (e.g., Web3Forms API endpoints) to instantly alert our centralised estimation command queue.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Cloud Architecture Hosting:</strong> Encrypted data storage on secure UK/EEA tier-1 server infrastructure.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Regulatory Compliance Bodies:</strong> Limited sharing of site inspection metrics with accreditation networks (NICEIC, BESA, Building Control officers) to officially register fully commissioned building mechanical works.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Professional Advisory Panels:</strong> Certified external accountants, insurers, and legal representatives bound by permanent non-disclosure mandates.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 6 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">06 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Storage Protocols &amp; Data Permanence</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Data records are stored physically and logically within data centers bound by ISO 27001 certification standards located primarily within the United Kingdom and EEA jurisdictions. We apply advanced cryptographic transit layers (TLS 1.3) to prevent intermediate listening during transmission.
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            <strong>Data Persistence Lifecycles:</strong>
+                        </p>
+                        <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-none space-y-3 font-body text-sm text-on-surface-variant">
+                            <div>
+                                <span class="font-bold text-on-surface">Commissioned Installation Assets:</span> Retained securely for a 10-year base timeline to satisfy structural defect liability verification, long-term unit component tracking, and multi-year maintenance service cycles.
+                            </div>
+                            <hr class="border-t border-outline-variant/40" />
+                            <div>
+                                <span class="font-bold text-on-surface">General Inquiries &amp; Quotations:</span> Records of preliminary site specifications that do not advance to an active build contract are systematically purged from primary storage nodes after 24 continuous calendar months.
+                            </div>
+                            <hr class="border-t border-outline-variant/40" />
+                            <div>
+                                <span class="font-bold text-on-surface">Statutory Fiscal Ledgers:</span> Retained for 6 years post-transaction to maintain strict alignment with UK HM Revenue &amp; Customs (HMRC) audit standards.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 7 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">07 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Statutory Data Subject Rights</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Under the Data Protection Act 2018, data subjects exercise unilateral rights over their documented profiles. To initiate any specific request, submit instructions directly to our privacy desk. We verify and action valid inquiries within 30 statutory days.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 font-body text-sm">
+                            <div class="border border-outline-variant p-4 rounded-none bg-surface-container-lowest">
+                                <span class="font-bold text-primary block mb-1">Subject Access Request (SAR)</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">Obtain a transparent, complete digital record of all personal vectors logged under your identity.</p>
+                            </div>
+                            <div class="border border-outline-variant p-4 rounded-none bg-surface-container-lowest">
+                                <span class="font-bold text-primary block mb-1">Right to Rectification</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">Command the immediate correction of inaccurate or incomplete property survey or contact matrices.</p>
+                            </div>
+                            <div class="border border-outline-variant p-4 rounded-none bg-surface-container-lowest">
+                                <span class="font-bold text-primary block mb-1">Right to Erasure</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">Request the complete logical purging of your records (subject to overrides for ongoing contract liability or statutory HMRC audit storage).</p>
+                            </div>
+                            <div class="border border-outline-variant p-4 rounded-none bg-surface-container-lowest">
+                                <span class="font-bold text-primary block mb-1">Right to Restriction / Objection</span>
+                                <p class="text-xs text-on-surface-variant leading-relaxed">Temporarily halt processing during disputes or object directly to data utilisation for secondary business analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 8 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">08 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Statutory Escalation &amp; Regulatory Recourse</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Should you deem our operational handling of your data matrices to be out of alignment with statutory protections, we request immediate internal communication to allow targeted engineering remediation. 
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Furthermore, you retain the persistent statutory right to lodge formal enforcement notices directly with the national independent regulatory authority:
+                        </p>
+                        <div class="p-6 bg-surface-container-low border border-outline-variant rounded-none space-y-2">
+                            <span class="font-headline text-base font-bold text-on-surface block">Information Commissioner's Office (ICO)</span>
+                            <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                                Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF<br />
+                                Telephone Hotline: 0303 123 1113<br />
+                                Statutory Gateway: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">https://ico.org.uk</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+            <div class="bg-on-surface p-12 md:p-24 flex flex-col lg:flex-row justify-between items-center gap-12 rounded-none relative overflow-hidden border border-outline-variant">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                    <h2 class="font-headline text-display-lg-mobile md:text-headline-md text-white mb-4">
+                        Secure Specifications. Guaranteed.
+                    </h2>
+                    <p class="font-body text-base text-surface-variant opacity-70 leading-relaxed">
+                        Ready to begin your project design with absolute confidence in structural data integrity? Consult our specialised engineers today.
+                    </p>
+                </div>
+                <div class="relative z-10">
+                    <a class="inline-flex items-center gap-3 bg-primary text-white font-headline text-button px-10 py-5 hover:bg-primary-container transition-all uppercase tracking-widest rounded-none" href="contact.html">
+                        Consultation
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-on-surface text-surface py-20 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <span class="font-headline text-2xl font-bold text-white block mb-6">Aura Vent Ltd</span>
+                    <p class="font-body text-surface-variant opacity-70 mb-8 max-w-xs leading-relaxed">
+                        Leading the way in residential ventilation across the UK. Precision engineering for healthy homes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors rounded-none">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Links</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="index.html" class="opacity-60 hover:opacity-100 transition-opacity">Home</a></li>
+                        <li><a href="services.html" class="opacity-60 hover:opacity-100 transition-opacity">Services</a></li>
+                        <li><a href="maintenance.html" class="opacity-60 hover:opacity-100 transition-opacity">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="about.html" class="opacity-60 hover:opacity-100 transition-opacity">About</a></li>
+                        <li><a href="experience.html" class="opacity-60 hover:opacity-100 transition-opacity">Experience</a></li>
+                        <li><a href="contact.html" class="opacity-60 hover:opacity-100 transition-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <p class="text-sm opacity-60 mb-6 leading-relaxed">Get the latest insights on home ventilation and air quality.</p>
+                    <form class="flex border border-outline-variant rounded-none">
+                        <input type="email" placeholder="Email Address" class="bg-transparent px-4 py-3 flex-grow text-sm outline-none rounded-none text-white">
+                        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-none">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm opacity-50">© <span id="copyright-year">2024</span> Aura Vent Ltd. All Rights Reserved.</p>
+                <div class="flex gap-8 text-xs opacity-50 uppercase tracking-widest">
+                    <a href="privacy.html" class="hover:opacity-100 font-bold">Privacy Policy</a>
+                    <a href="terms.html" class="hover:opacity-100">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* 
+   Aura Vent Ltd - Source of Truth for Global Styles
+   Mechanical Precision & Atmospheric Clarity
+*/
+
+:root {
+    --primary: #00685f;
+    --primary-fixed: #89f5e7;
+    --on-surface-variant: #3d4947;
+    --surface-variant: #d9e3f6;
+    --surface: #f8f9ff;
+    --on-surface: #121c2a;
+    --outline-variant: #bcc9c6;
+    --transition-base: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+    --surface: #0a111a;
+    --on-surface: #f4faff;
+    --on-surface-variant: #aebdb9;
+    --surface-variant: #2d3840;
+    --outline-variant: #3a4745;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* Material Symbols Base Configuration */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glassmorphism Navigation Component */
+.glass-nav {
+    background-color: rgba(240, 242, 250, 0.72) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 104, 95, 0.08) !important;
+    transition: all var(--transition-base);
+}
+
+.dark .glass-nav {
+    background-color: rgba(8, 14, 22, 0.75) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(137, 245, 231, 0.08) !important;
+}
+
+/* Navigation Link Hover Effects */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+    color: var(--on-surface-variant);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dark .nav-link {
+    color: var(--on-surface-variant);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.dark .nav-link::after {
+    background-color: var(--primary-fixed);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.dark .nav-link:hover {
+    color: var(--primary-fixed);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link-active {
+    color: var(--primary) !important;
+}
+
+.dark .nav-link-active {
+    color: var(--primary-fixed) !important;
+}
+
+.nav-link-active::after {
+    width: 100% !important;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#theme-toggle:hover {
+    transform: rotate(30deg);
+}
+
+#theme-toggle:active {
+    transform: scale(0.9);
+}
+
+/* Mobile Menu Drawer */
+#mobile-menu {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(248, 249, 255, 0.98);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.dark #mobile-menu {
+    background-color: rgba(10, 17, 26, 0.98);
+}
+
+.mobile-nav-link {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--on-surface);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(109, 122, 119, 0.1);
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: var(--primary);
+    transform: translateX(12px);
+}
+
+.mobile-nav-link-active {
+    color: var(--primary);
+}
+
+/* Premium Card Hover Effects */
+.premium-card {
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.4s cubic-bezier(0.2, 0, 0, 1), border-color 0.4s ease;
+}
+
+.premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.12);
+}
+
+.dark .premium-card:hover {
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4);
+}
+
+/* Vibrant Gradients */
+.vibrant-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, #008378 100%);
+}
+
+.vibrant-gradient-hover:hover {
+    background: linear-gradient(135deg, #008378 0%, var(--primary) 100%);
+}
+
+/* Global Selection Style */
+::selection {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+

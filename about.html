@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us - Aura Vent Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- TopNavBar -->
+    <header id="main-header" class="w-full top-0 sticky z-50 glass-nav transition-all duration-300">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="index.html">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-xl">
+                    <span class="material-symbols-outlined text-white">cyclone</span>
+                </div>
+                Aura Vent Ltd
+            </a>
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="maintenance.html">Maintenance</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link nav-link-active" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 text-primary dark:text-primary-fixed hover:bg-primary/10 dark:hover:bg-primary-fixed/10 transition-all rounded-full flex items-center justify-center group" aria-label="Toggle Theme">
+                    <span class="material-symbols-outlined transition-transform duration-500 group-hover:rotate-12">dark_mode</span>
+                </button>
+                <!-- Action Button -->
+                <a class="hidden md:inline-flex bg-primary text-white font-headline text-button px-6 py-3 hover:bg-primary-container transition-all items-center justify-center scale-95 hover:scale-100 duration-200 uppercase tracking-widest shadow-lg shadow-primary/20" href="contact.html">
+                    Request Quote
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-primary/5 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full md:hidden flex flex-col p-margin-mobile bg-surface-container-lowest dark:bg-inverse-surface transition-transform duration-500 ease-in-out">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-headline text-2xl font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+                <span class="material-symbols-outlined">cyclone</span>
+                Aura Vent Ltd
+            </span>
+            <button id="mobile-menu-close" class="p-2 text-primary dark:text-primary-fixed rounded-full hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="maintenance.html">Maintenance</a>
+            <a class="mobile-nav-link" href="experience.html">Experience</a>
+            <a class="mobile-nav-link mobile-nav-link-active" href="about.html">About</a>
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="mt-auto pb-12">
+            <a class="w-full bg-primary text-white font-headline text-button px-6 py-4 flex items-center justify-center uppercase tracking-widest shadow-xl" href="contact.html">
+                Request Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-8 flex flex-col justify-center space-y-6">
+                    <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Company Overview</span>
+                    <h1 class="font-headline text-display-lg-mobile md:text-display-lg text-on-surface">
+                        Mechanical Precision.<br /><span class="text-primary italic">Atmospheric Clarity.</span>
+                    </h1>
+                    <p class="font-body text-body-lg text-on-surface-variant max-w-2xl">
+                        Since 2014, Aura Vent Ltd has engineered superior residential ventilation systems. We do not just install ductwork; we calculate, calibrate, and construct enduring environments.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-[400px] md:h-[600px] mt-16 bg-surface-variant border border-outline-variant overflow-hidden relative rounded-3xl shadow-xl">
+                <img alt="Architectural integration of ventilation" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQPKNC4A5Tobmk5Smv4U11grhUiL4CJ4hQ4NDn7plrQPx6XlcoC7UBLpqbNxHtwVBNTRQ9-_yDub-ftFC56PahOWspyopQd3cjG3_4mnlVOe_Wbpq_gAytJ_zbzuvW8OWtis0GAXN-P3a-LXzshlUtF-t1fuDjBpmshk2vKCC1pPaG0MPrkNxHDEoriyBasSkfuWo9E-quxpU6P1o9OQ5xa1W56L63GWJxDPGjhxMtS76d9B9gldamCFMSsfIFW2YrEjPYYUR720c" />
+            </div>
+        </section>
+
+        <!-- Technical Line Separator -->
+        <hr class="border-t border-outline-variant max-w-container-max mx-auto opacity-30" />
+
+        <!-- Story & Specialism Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Left Column: Story -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-[2px] bg-primary"></div>
+                        <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Established 2014</span>
+                    </div>
+                    <h2 class="font-headline text-headline-md text-on-surface">
+                        Built on rigorous standards and uncompromising quality.
+                    </h2>
+                    <div class="space-y-6 text-on-surface-variant">
+                        <p class="font-body text-body-md">
+                            Our foundation is built on the belief that indoor air quality is an engineering discipline. We transitioned from general HVAC to a highly specialised focus on Mechanical Ventilation with Heat Recovery (MVHR) and Mechanical Extract Ventilation (MEV) because we recognised a critical gap in the residential market: precision.
+                        </p>
+                        <p class="font-body text-body-md">
+                            Every system we design and install operates as a tightly integrated network, measured and balanced to specific tolerances. We partner with architects, builders, and homeowners who demand long-term reliability over quick fixes.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right Column: Specialism Cards -->
+                <div class="lg:col-span-6 lg:col-start-7 flex flex-col gap-6">
+                    <!-- MVHR Card -->
+                    <div class="bg-surface-container-lowest border border-outline-variant p-10 flex flex-col space-y-6 transition-all hover:border-primary hover:shadow-lg rounded-2xl group">
+                        <span class="font-label-technical text-label-technical text-outline uppercase tracking-widest">Core Speciality 01</span>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">air</span>
+                            </div>
+                            <h3 class="font-headline text-headline-sm text-on-surface">MVHR Systems</h3>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant">
+                            Mechanical Ventilation with Heat Recovery. Delivering continuous fresh air while extracting stale air and recovering up to 95% of the heat. Engineered for airtight, modern homes.
+                        </p>
+                    </div>
+                    <!-- MEV Card -->
+                    <div class="bg-surface-container-lowest border border-outline-variant p-10 flex flex-col space-y-6 transition-all hover:border-primary hover:shadow-lg rounded-2xl group">
+                        <span class="font-label-technical text-label-technical text-outline uppercase tracking-widest">Core Speciality 02</span>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">cyclone</span>
+                            </div>
+                            <h3 class="font-headline text-headline-sm text-on-surface">MEV Systems</h3>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant">
+                            Centralised Mechanical Extract Ventilation. A precise, continuous extraction strategy that quietly manages moisture and pollutants across multiple wet rooms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32">
+            <div class="mb-16 text-center max-w-3xl mx-auto">
+                <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Operational Directives</span>
+                <h2 class="font-headline text-headline-md text-on-surface mt-4">Our Core Values</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Value 1 -->
+                <div class="p-8 bg-surface-container-lowest border border-outline-variant hover:bg-white hover:shadow-xl transition-all duration-300 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">verified</span>
+                    <h3 class="font-headline text-headline-sm text-on-surface mb-3">Quality Control</h3>
+                    <p class="font-body text-body-md text-on-surface-variant">
+                        Every duct, joint, and unit is inspected to exceed baseline building regulations. We build for permanence.
+                    </p>
+                </div>
+                <!-- Value 2 -->
+                <div class="p-8 bg-surface-container-lowest border border-outline-variant hover:bg-white hover:shadow-xl transition-all duration-300 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">health_and_safety</span>
+                    <h3 class="font-headline text-headline-sm text-on-surface mb-3">Strict Safety</h3>
+                    <p class="font-body text-body-md text-on-surface-variant">
+                        Rigorous safety protocols govern every site visit. Compliance is our absolute minimum standard.
+                    </p>
+                </div>
+                <!-- Value 3 -->
+                <div class="p-8 bg-surface-container-lowest border border-outline-variant hover:bg-white hover:shadow-xl transition-all duration-300 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">rule</span>
+                    <h3 class="font-headline text-headline-sm text-on-surface mb-3">Consistency</h3>
+                    <p class="font-body text-body-md text-on-surface-variant">
+                        Calculated methodologies ensure repeatable excellence. Our results are predictable, measurable, and verified.
+                    </p>
+                </div>
+                <!-- Value 4 -->
+                <div class="p-8 bg-surface-container-lowest border border-outline-variant hover:bg-white hover:shadow-xl transition-all duration-300 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">handshake</span>
+                    <h3 class="font-headline text-headline-sm text-on-surface mb-3">Partnerships</h3>
+                    <p class="font-body text-body-md text-on-surface-variant">
+                        We view clients, architects, and developers as long-term collaborators, providing ongoing lifecycle support.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Credibility Section -->
+        <section class="bg-surface-container-low py-24 md:py-32 border-y border-outline-variant/30">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 relative">
+                        <div class="border border-outline-variant bg-white p-3 rounded-3xl shadow-2xl relative z-10">
+                            <img alt="Engineering Team" class="w-full h-[450px] object-cover rounded-2xl grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY_tnmJzHkuV_dTVdJi3jiOH6ja2Dmz4CPDuAJTHSe-vFPglqojXrRPm8mT1Zqzlas4g9nKMD0eejh3LUdxMnhCg5cA2_e2ZCb-6y-y3R4ThOuQ6WHQDRHtBYau6y6nnGMn95NqMY2Lgy4s4qtI-zxjNDWWcEa3QJs4XX2Bvgv2bGrnkWUWDKaP6bXw9-29exUjsTBOTEOFTbL5CpRBeLmRsBYlBmV-0sLlQA3TMf2F2SmG16lU6T592a98xRfhAz9aIpMJTK9o4Q" />
+                        </div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-8">
+                        <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Human Capital</span>
+                        <h2 class="font-headline text-headline-md text-on-surface">Qualified Engineers. Technical Mastery.</h2>
+                        <div class="pl-6 border-l-4 border-primary">
+                            <p class="font-body text-body-lg text-on-surface-variant italic">
+                                "We don't employ general labourers. Every member of our field team is a certified ventilation technician."
+                            </p>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Our credibility rests on the expertise of our personnel. The Aura Vent team holds comprehensive certifications across mechanical installations, airflow dynamics, and electrical safety. We invest heavily in continuous technical training to ensure our engineers are versed in the latest building physics and high-efficiency heat recovery technologies.
+                        </p>
+                        <!-- Trust Badges (Monochromatic) -->
+                        <div class="pt-6 flex flex-wrap gap-12 opacity-60 grayscale">
+                            <div class="font-headline text-xl text-on-surface font-bold tracking-tighter uppercase">NICEIC APPROVED</div>
+                            <div class="font-headline text-xl text-on-surface font-bold tracking-tighter uppercase">BESA MEMBER</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32">
+            <div class="bg-on-surface p-12 md:p-24 flex flex-col lg:flex-row justify-between items-center gap-12 rounded-[2rem] relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                    <h2 class="font-headline text-display-lg-mobile md:text-display-lg text-white mb-6">
+                        Ready to specify your system?
+                    </h2>
+                    <p class="font-body text-body-lg text-surface-variant opacity-70">
+                        Consult with our engineering team to design a bespoke ventilation strategy for your residential project.
+                    </p>
+                </div>
+                <div class="relative z-10">
+                    <a class="inline-flex items-center gap-3 bg-primary text-white font-headline text-button px-10 py-5 hover:bg-primary-container transition-all uppercase tracking-widest shadow-xl hover:scale-105 active:scale-95 duration-200" href="contact.html">
+                        Consultation
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-on-surface text-surface py-20 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <span class="font-headline text-2xl font-bold text-white block mb-6">Aura Vent Ltd</span>
+                    <p class="font-body text-surface-variant opacity-70 mb-8 max-w-xs">
+                        Leading the way in residential ventilation across the UK. Precision engineering for healthy homes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Links</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="index.html" class="opacity-60 hover:opacity-100 transition-opacity">Home</a></li>
+                        <li><a href="services.html" class="opacity-60 hover:opacity-100 transition-opacity">Services</a></li>
+                        <li><a href="maintenance.html" class="opacity-60 hover:opacity-100 transition-opacity">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="about.html" class="opacity-60 hover:opacity-100 transition-opacity">About</a></li>
+                        <li><a href="experience.html" class="opacity-60 hover:opacity-100 transition-opacity">Experience</a></li>
+                        <li><a href="contact.html" class="opacity-60 hover:opacity-100 transition-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <p class="text-sm opacity-60 mb-6">Get the latest insights on home ventilation and air quality.</p>
+                    <form class="flex border border-outline-variant">
+                        <input type="email" placeholder="Email Address" class="bg-transparent px-4 py-3 flex-grow text-sm outline-none">
+                        <button type="submit" class="bg-primary text-white px-6 py-3">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm opacity-50">© <span id="copyright-year">2024</span> Aura Vent Ltd. All Rights Reserved.</p>
+                <div class="flex gap-8 text-xs opacity-50 uppercase tracking-widest">
+                    <a href="privacy.html" class="hover:opacity-100">Privacy Policy</a>
+                    <a href="terms.html" class="hover:opacity-100">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Project Experience - Aura Vent Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- TopNavBar -->
+    <header id="main-header" class="w-full top-0 sticky z-50 glass-nav transition-all duration-300">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="index.html">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-xl">
+                    <span class="material-symbols-outlined text-white">cyclone</span>
+                </div>
+                Aura Vent Ltd
+            </a>
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="maintenance.html">Maintenance</a>
+                <a class="nav-link nav-link-active" href="experience.html">Experience</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 text-primary dark:text-primary-fixed hover:bg-primary/10 dark:hover:bg-primary-fixed/10 transition-all rounded-full flex items-center justify-center group" aria-label="Toggle Theme">
+                    <span class="material-symbols-outlined transition-transform duration-500 group-hover:rotate-12">dark_mode</span>
+                </button>
+                <!-- Action Button -->
+                <a class="hidden md:inline-flex bg-primary text-white font-headline text-button px-6 py-3 hover:bg-primary-container transition-all items-center justify-center scale-95 hover:scale-100 duration-200 uppercase tracking-widest shadow-lg shadow-primary/20" href="contact.html">
+                    Request Quote
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-primary/5 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full md:hidden flex flex-col p-margin-mobile bg-surface-container-lowest dark:bg-inverse-surface transition-transform duration-500 ease-in-out">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-headline text-2xl font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+                <span class="material-symbols-outlined">cyclone</span>
+                Aura Vent Ltd
+            </span>
+            <button id="mobile-menu-close" class="p-2 text-primary dark:text-primary-fixed rounded-full hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="maintenance.html">Maintenance</a>
+            <a class="mobile-nav-link mobile-nav-link-active" href="experience.html">Experience</a>
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="mt-auto pb-12">
+            <a class="w-full bg-primary text-white font-headline text-button px-6 py-4 flex items-center justify-center uppercase tracking-widest shadow-xl" href="contact.html">
+                Request Quote
+            </a>
+        </div>
+    </div>
+<!-- Main Content Canvas -->
+<main class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<div class="mb-20 max-w-3xl">
+<p class="font-label-technical text-label-technical text-primary uppercase tracking-widest mb-4">Portfolio</p>
+<h1 class="font-display-lg text-display-lg text-on-background mb-6">Project Experience</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A curated selection of our recent mechanical ventilation installations. We deliver uncompromising precision and compliance across complex residential and high-end apartment developments.</p>
+</div>
+<!-- Grid Structure -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Card 1 -->
+<div class="col-span-1 md:col-span-4 premium-card border border-outline-variant bg-surface-container-lowest hover:border-primary transition-colors duration-300 group flex flex-col rounded-xl">
+<div class="h-64 w-full relative border-outline-variant overflow-hidden rounded-t-xl">
+<img alt="Luxury apartment construction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out grayscale-[20%] group-hover:grayscale-0 rounded-t-xl" data-alt="A pristine, high-end modern residential apartment building construction site during the final fit-out phase. The image focuses on clean architectural lines and a highly organised professional atmosphere. Crisp daylight floods the space, highlighting the precision of the exposed structural elements and mechanical installations. The aesthetic is premium industrial, utilising a palette of technical slate grays, stark whites, and subtle hints of metallic teal, conveying expert engineering and meticulous execution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwklRqqbF0Bbo4M53Q3ZLZzKYWrVUXpWF-K2CYO7qncLOxL3NC5OhXkAHqLmuizWhSNWgB93H86SNU8T6TPfQqVLF1mB8E08Qqy3y036fa31iHxQUjapUBM7BxxKJCoHyQfF-XaNvA0qqEoJcHo1wFyFCR3mUEjeTGBJkR5RiL_3gYhHnA-vA2WsZEPK3etxsYg3D390nLIwDgE3WG1qHg78JO6hfG731p-x9NZzMMkA1BU1o-WKrwpuq3mjEQsuZ_pHtNU7q4HTI"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-4">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">SPEC: LUXURY APARTMENTS</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2">The Belvedere Tower</h3>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant">
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Client</span>
+<span class="text-on-background text-right">Apex Main Contractors</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">System</span>
+<span class="text-on-background text-right">Centralised MVHR</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Scope</span>
+<span class="text-on-background text-right">Full Install &amp; Commissioning</span>
+</li>
+<li class="flex justify-between items-start mt-2 pt-2 border-t border-dashed border-outline-variant">
+<span class="text-primary font-bold">Outcome</span>
+<span class="text-on-background text-right font-medium">100% Part F Compliance</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-span-1 md:col-span-4 premium-card border border-outline-variant bg-surface-container-lowest hover:border-primary transition-colors duration-300 group flex flex-col rounded-xl">
+<div class="h-64 w-full relative border-outline-variant overflow-hidden rounded-t-xl">
+<img alt="Modern heritage renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out grayscale-[20%] group-hover:grayscale-0 rounded-t-xl" data-alt="An interior view of a meticulously restored heritage residential property undergoing a modern mechanical upgrade. The scene captures the intersection of classic brickwork and sleek, newly installed metallic ductwork. The lighting is balanced, creating a technical yet inviting mood that emphasises durability and clean air systems. The overall style is premium industrial, employing deep charcoal shadows, bright surface whites, and precise, sharp-edged architectural framing indicative of top-tier contracting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh9uQbBhXbsU6yZBYcVpin0eug0kWUSZwIKqnf_uyhRZd8KTjD_DcYvRvflMZ0YvGad08cJgvrs-vrpFFy5k_brSzyV3hbBG0x1qzpbvRixDZHrT39CMXhmVQNPCfXpLyil4vKH7gROUvszpUeOh7ZvONtq5SszrvcZjTOrryDvTWoVO0oISYJ5QSLZdOT6GxvgjCD--xsQGH4D6zuzx3KXoRFZfM04Jrrzg7ObniH1ofO9R1tm9mG3CDxIdcJ1T7jlIHRNrxn8qo"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-4">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">SPEC: HERITAGE RETROFIT</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2">Wellington Estate</h3>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant">
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Client</span>
+<span class="text-on-background text-right">Private Developer</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">System</span>
+<span class="text-on-background text-right">Decentralised MEV</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Scope</span>
+<span class="text-on-background text-right">Design &amp; Remediation</span>
+</li>
+<li class="flex justify-between items-start mt-2 pt-2 border-t border-dashed border-outline-variant">
+<span class="text-primary font-bold">Outcome</span>
+<span class="text-on-background text-right font-medium">Zero Aesthetic Impact</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="col-span-1 md:col-span-4 premium-card border border-outline-variant bg-surface-container-lowest hover:border-primary transition-colors duration-300 group flex flex-col rounded-xl">
+<div class="h-64 w-full relative border-outline-variant overflow-hidden rounded-t-xl">
+<img alt="Large scale residential development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out grayscale-[20%] group-hover:grayscale-0 rounded-t-xl" data-alt="A wide, highly structured exterior shot of a large-scale modern residential housing development near completion. The composition is rigid and geometric, resembling a technical blueprint brought to life. The sky is a crisp, clear light blue, providing a stark contrast to the sharp lines of the neutral-toned buildings. The image projects an aura of massive scale managed with mechanical precision, utilising a cool, objective colour palette to reinforce the brand's engineered, no-nonsense aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC8A97RonLew5a4uO5MMfDhVAqYFWF1RrQVR9g4SM1SP2lwPKfiO_-fZykEMpl-d0EpbEOTNM6Sqt7dXE9jrNA4wg1mmiPXc41la_InN1eqP-A7N7iA5noSeDV7EmJ43WTfM1OG-bRsb9w1lzYmQRxl6hRa2TrAPAHvA9aZzgzrJkS8sJ_l1l9UzmOsEGbesOE2zizbKrliz-QS2LyLlhk5EmzR4xycnXPioJxypbW9WlP-0FLr5gkL6xa1LYVDYv96MLVLanQtKs"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-4">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">SPEC: VOLUME HOUSING</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background mt-2">Oakwood Quarter (Phase 2)</h3>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant">
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Client</span>
+<span class="text-on-background text-right">National Homes Group</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">System</span>
+<span class="text-on-background text-right">Standard MVHR Units</span>
+</li>
+<li class="flex justify-between items-start">
+<span class="text-on-surface-variant font-medium">Scope</span>
+<span class="text-on-background text-right">120-Plot Installation</span>
+</li>
+<li class="flex justify-between items-start mt-2 pt-2 border-t border-dashed border-outline-variant">
+<span class="text-primary font-bold">Outcome</span>
+<span class="text-on-background text-right font-medium">Delivered Ahead of Schedule</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Technical Divider -->
+<div class="w-full h-px bg-outline-variant"></div>
+<!-- CTA Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg text-on-background mb-6">Require Expert Installation?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Our technical teams are ready to review your blueprints and provide a comprehensive, compliant ventilation strategy for your next development.</p>
+<a class="inline-block bg-primary text-white px-10 py-4 font-button text-button uppercase tracking-wider rounded-none hover:bg-primary-container transition-colors border border-primary w-full md:w-auto text-center" href="contact.html">
+                Request a Quote
+            </a>
+</div>
+</section>
+    <!-- Footer Component -->
+    <footer class="bg-on-surface text-surface py-20 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <span class="font-headline text-2xl font-bold text-white block mb-6">Aura Vent Ltd</span>
+                    <p class="font-body text-surface-variant opacity-70 mb-8 max-w-xs">
+                        Leading the way in residential ventilation across the UK. Precision engineering for healthy homes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Links</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="index.html" class="opacity-60 hover:opacity-100 transition-opacity">Home</a></li>
+                        <li><a href="services.html" class="opacity-60 hover:opacity-100 transition-opacity">Services</a></li>
+                        <li><a href="maintenance.html" class="opacity-60 hover:opacity-100 transition-opacity">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="about.html" class="opacity-60 hover:opacity-100 transition-opacity">About</a></li>
+                        <li><a href="experience.html" class="opacity-60 hover:opacity-100 transition-opacity">Experience</a></li>
+                        <li><a href="contact.html" class="opacity-60 hover:opacity-100 transition-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <p class="text-sm opacity-60 mb-6">Get the latest insights on home ventilation and air quality.</p>
+                    <form class="flex border border-outline-variant">
+                        <input type="email" placeholder="Email Address" class="bg-transparent px-4 py-3 flex-grow text-sm outline-none">
+                        <button type="submit" class="bg-primary text-white px-6 py-3">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm opacity-50">© <span id="copyright-year">2024</span> Aura Vent Ltd. All Rights Reserved.</p>
+                <div class="flex gap-8 text-xs opacity-50 uppercase tracking-widest">
+                    <a href="privacy.html" class="hover:opacity-100">Privacy Policy</a>
+                    <a href="terms.html" class="hover:opacity-100">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

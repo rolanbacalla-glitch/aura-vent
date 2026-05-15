@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Terms of Service - Aura Vent Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- TopNavBar -->
+    <header id="main-header" class="w-full top-0 sticky z-50 glass-nav transition-all duration-300">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="index.html">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-none">
+                    <span class="material-symbols-outlined text-white">cyclone</span>
+                </div>
+                Aura Vent Ltd
+            </a>
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="maintenance.html">Maintenance</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 text-primary dark:text-primary-fixed hover:bg-primary/10 dark:hover:bg-primary-fixed/10 transition-all rounded-none flex items-center justify-center group" aria-label="Toggle Theme">
+                    <span class="material-symbols-outlined transition-transform duration-500 group-hover:rotate-12">dark_mode</span>
+                </button>
+                <!-- Action Button -->
+                <a class="hidden md:inline-flex bg-primary text-white font-headline text-button px-6 py-3 hover:bg-primary-container transition-all items-center justify-center scale-95 hover:scale-100 duration-200 uppercase tracking-widest shadow-none rounded-none" href="contact.html">
+                    Request Quote
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden text-primary dark:text-primary-fixed p-2 rounded-none hover:bg-primary/5 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full md:hidden flex flex-col p-margin-mobile bg-surface-container-lowest dark:bg-inverse-surface transition-transform duration-500 ease-in-out">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-headline text-2xl font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+                <span class="material-symbols-outlined">cyclone</span>
+                Aura Vent Ltd
+            </span>
+            <button id="mobile-menu-close" class="p-2 text-primary dark:text-primary-fixed rounded-none hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="maintenance.html">Maintenance</a>
+            <a class="mobile-nav-link" href="experience.html">Experience</a>
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="mt-auto pb-12">
+            <a class="w-full bg-primary text-white font-headline text-button px-6 py-4 flex items-center justify-center uppercase tracking-widest rounded-none" href="contact.html">
+                Request Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 border-b border-outline-variant/30">
+            <div class="max-w-3xl space-y-6">
+                <span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block">Contractual Architecture</span>
+                <h1 class="font-headline text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight">
+                    Terms of Service &amp;<br />
+                    <span class="text-primary italic">Service Specifications.</span>
+                </h1>
+                <p class="font-body text-body-lg text-on-surface-variant leading-relaxed">
+                    These Terms of Service govern your access to the primary web domain of Aura Vent Ltd alongside the formal statutory commissioning parameters for our residential mechanical ventilation implementations, calibration routines, and continuous field maintenance provisions across the United Kingdom.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <!-- Sidebar Metadata Panel -->
+                <div class="lg:col-span-4 space-y-8">
+                    <div class="bg-surface-container-low border border-outline-variant p-8 rounded-none">
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-6">Contract Attributes</span>
+                        
+                        <div class="space-y-4 text-sm border-b border-outline-variant/30 pb-6 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Document ID:</span>
+                                <span class="font-mono text-on-surface">AVL-TOS-STD-02</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Applicability:</span>
+                                <span class="text-on-surface">UK Operations</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Standard Base:</span>
+                                <span class="text-on-surface">BESA / Part F Regs</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-on-surface-variant font-bold">Governing Law:</span>
+                                <span class="text-on-surface">England &amp; Wales</span>
+                            </div>
+                        </div>
+
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-3">Contractor Entity</span>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed mb-6">
+                            <strong>Aura Vent Ltd</strong><br />
+                            Registered in England and Wales<br />
+                            Company No: 08954321<br />
+                            Registered Base: 42 Airflow Way, Precision Park, London, E20 1AV
+                        </p>
+
+                        <span class="font-label-technical text-xs text-primary uppercase tracking-widest block mb-3">Statutory Standard</span>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                            All physical duct configurations and extractor testing routines adhere precisely to the latest Building Regulations Approved Document Part F (Ventilation).
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-surface-container-lowest border border-outline-variant rounded-none">
+                        <span class="material-symbols-outlined text-primary mb-3 text-3xl block">gavel</span>
+                        <h4 class="font-headline text-base font-bold text-on-surface mb-2">Consumer Protection</h4>
+                        <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                            We preserve unreservedly all mandatory individual guarantees codified under the Consumer Rights Act 2015 and the Consumer Contracts Regulations 2013.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Terms Content -->
+                <div class="lg:col-span-8 space-y-12">
+                    <!-- Section 1 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">01 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Introduction &amp; Acceptance</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Welcome to the web ecosystem and contracting channels of Aura Vent Ltd. By browsing our informational domains, requesting automated volumetric quote estimates, or committing to custom engineering implementation schedules, you irrevocably bind yourself to the technical and operational guidelines formulated below.
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            If you are registering orders on behalf of an incorporated development firm, architectural practice, or localised real estate agency, you represent and warrant that you hold the legal agency to commit said enterprise to these parameters.
+                        </p>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 2 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">02 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Website Utilisation &amp; Proprietary Rights</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            All architectural blueprints, graphical ventilation layouts, text copy, bespoke design calculators, and software interfaces hosted on this platform represent the exclusive intellectual property of Aura Vent Ltd or our accredited licensors. You are permitted to cache, print, or download material solely for scoping immediate residential ventilation works with our engineers.
+                        </p>
+                        <div class="p-6 bg-surface border-l-4 border-primary rounded-none mt-4 font-body text-xs text-on-surface-variant leading-relaxed">
+                            <strong class="text-on-surface block mb-1">TECHNICAL DISCLAIMER:</strong>
+                            General ventilation guidelines, humidity mitigation matrices, and standard MVHR sizing indicators published publicly on our pages serve as educational insights only. They do not constitute formal mechanical blueprints or structural advice. Aura Vent Ltd accepts zero liability for system underperformance or pressure drop faults resulting from third-party client installations routed without our localised physical site calibration surveys.
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 3 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">03 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Quotations &amp; Contractual Formation</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Any estimated structural pricing summary output by our web interfaces or emailed by our engineering desk represents an <strong>Invitation to Treat</strong>. 
+                        </p>
+                        <ul class="space-y-3 font-body text-body-md text-on-surface-variant list-disc list-inside pl-2">
+                            <li>
+                                <strong class="text-on-surface">Quotation Validity:</strong> Formal, itemised written proposals generated after an official layout evaluation remain valid for exactly <strong>30 calendar days</strong> from transmission.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Binding Contract Trigger:</strong> A binding legal contract to execute build or service operations forms solely when you supply documented confirmation of our Quotation and remit the defined initial Stage-1 preliminary layout deposit.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Scope Fluctuations:</strong> If unmapped structural hurdles (e.g. non-standard solid masonry or unlisted utility routing paths) emerge during site opening, we reserve the right to append documented variation orders reflecting the actual mechanical labour required.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 4 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">04 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Engineering Standards &amp; Mutual Obligations</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Aura Vent Ltd guarantees that physical installations will be executed by fully credentialed mechanical engineers aligning strictly with <strong>UK Building Regulations Approved Document Part F</strong> and compliant with BESA DW/143 ductwork integrity standards.
+                        </p>
+                        <div class="space-y-4 pt-2">
+                            <div class="border border-outline-variant p-6 rounded-none bg-surface-container-lowest">
+                                <h4 class="font-headline text-base font-bold text-primary mb-2">Client Access Obligations</h4>
+                                <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                                    The client must ensure safe, clear, and unhindered access to all structural pathways (joists, loft cavities, external wall routing points) during designated commissioning dates. Continuous single-phase mains electricity and basic lighting must be operational on site.
+                                </p>
+                            </div>
+                            <div class="border border-outline-variant p-6 rounded-none bg-surface-container-lowest">
+                                <h4 class="font-headline text-base font-bold text-primary mb-2">Hazardous Environments Notice</h4>
+                                <p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                                    If our technicians identify suspected hazardous structures (such as asbestos-containing insulating boards) during core drilling, operations will pause instantly. The client assumes sole administrative and financial responsibility for independent environmental testing and abatement before mechanical works can safely resume.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 5 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">05 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Fiscal Scheduling &amp; Payment Logistics</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            All final contract sums are subject to prevailing UK Value Added Tax (VAT) rates unless supported by valid HMRC zero-rating or reduced-rating certification for residential energy upgrades supplied upfront by the client.
+                        </p>
+                        <ul class="space-y-3 font-body text-body-md text-on-surface-variant list-disc list-inside pl-2">
+                            <li>
+                                <strong class="text-on-surface">Standard Milestone Structure:</strong> Typically scheduled as a preliminary materials deposit upon design freeze, intermediate milestone disbursements matching equipment staging, and final balance due immediately upon practical commissioning and testing handover.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Late Settlement Protocols:</strong> Under the provisions of the <em>Late Payment of Commercial Debts (Interest) Act 1998</em>, outstanding commercial accounts overdue beyond 14 continuous days accrue statutory cumulative interest calculated at 8% above the Bank of England base rate, alongside associated formal recovery administration charges.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Retention of Title:</strong> All physical mechanical hardware, extractor units, structural manifolds, and rigid duct assemblies remain the absolute property of Aura Vent Ltd until final ledger balances are fully remitted and cleared into our institutional routing accounts.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 6 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">06 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Statutory Consumer Rights &amp; Cancellation Frameworks</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            If you are contracting with us strictly as a residential Consumer (under non-commercial intentions), your statutory rights are governed comprehensively by the <strong>Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013</strong>.
+                        </p>
+                        <div class="space-y-4 pt-2 font-body text-sm text-on-surface-variant">
+                            <div class="bg-surface p-4 border-l-2 border-primary">
+                                <strong class="text-on-surface block mb-1">Standard 14-Day Cooling-Off Window:</strong>
+                                Consumers maintain the statutory right to cancel off-premises installation contracts within 14 consecutive calendar days of written execution without providing localised justification. To exercise this right, transmit clear notification to our operational desk.
+                            </div>
+                            <div class="bg-surface-variant/40 p-4 border-l-2 border-primary-fixed text-xs">
+                                <strong class="text-on-surface block mb-1">CRITICAL STATUTORY EXCEPTION (Regulation 28(1)(b)):</strong>
+                                Due to the precise mechanical nature of architectural ventilation, rigid ducting assemblies, external louvres, and sound attenuators are custom-cut and calibrated directly to your property's specific physical dimensions. <strong>Consequently, the right to execute a mid-contract refund or unprovoked cancellation ceases permanently once physical cutting, manufacturing, or structural materials staging commences on your custom project specification.</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 7 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">07 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Limitation of Structural Liability</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Nothing in these Terms seeks to exclude or cap liability for personal physical death or bodily harm triggered directly by our internal operational negligence, nor for fraudulent contract misrepresentation.
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Subject to mandatory consumer protections, our parameters of operational liability conform to the following institutional limits:
+                        </p>
+                        <ul class="space-y-2 font-body text-body-md text-on-surface-variant list-disc list-inside pl-2">
+                            <li>
+                                <strong class="text-on-surface">Commercial Caps:</strong> In respect to business-to-business implementations, Aura Vent Ltd's maximum collective liability for physical property damage or contract execution anomalies is restricted absolutely to the core total sum remitted for that specific work package.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Indirect &amp; Consequential Losses:</strong> We are not legally accountable for indirect revenue losses, extended project delays stemming from independent third-party trade execution failure, or alternative rental accommodations incurred during maintenance routing.
+                            </li>
+                            <li>
+                                <strong class="text-on-surface">Pre-Existing Structural Conditions:</strong> We accept zero operational liability for resolving underlying building envelope defects, ingress of rainwater, or structural condensation caused by unventilated cold-bridged construction fabrics pre-dating our mechanical installations.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="border-t border-outline-variant opacity-30" />
+
+                    <!-- Section 8 -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-sm text-primary font-bold">08 //</span>
+                            <h2 class="font-headline text-headline-sm text-on-surface">Governing Law &amp; Exclusive Jurisdiction</h2>
+                        </div>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            Every facet of these Terms of Service, associated contractual delivery documentation, or continuous site maintenance schedules shall be strictly governed by, interpreted under, and executed in accordance with the laws of <strong>England and Wales</strong>.
+                        </p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed">
+                            The contracting parties irrevocably agree that any arbitration, structural disputes, or payment claim escalations arising out of or connected to our implementations fall under the sole, exclusive jurisdiction of the <strong>Courts of England and Wales</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+            <div class="bg-on-surface p-12 md:p-24 flex flex-col lg:flex-row justify-between items-center gap-12 rounded-none relative overflow-hidden border border-outline-variant">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="relative z-10 max-w-2xl text-center lg:text-left">
+                    <h2 class="font-headline text-display-lg-mobile md:text-headline-md text-white mb-4">
+                        Clear Parameters. Lasting Quality.
+                    </h2>
+                    <p class="font-body text-base text-surface-variant opacity-70 leading-relaxed">
+                        Have precise questions regarding structural project scheduling, warranty periods, or building regulation integration? Connect directly with our mechanical estimators.
+                    </p>
+                </div>
+                <div class="relative z-10">
+                    <a class="inline-flex items-center gap-3 bg-primary text-white font-headline text-button px-10 py-5 hover:bg-primary-container transition-all uppercase tracking-widest rounded-none" href="contact.html">
+                        Contact Desk
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-on-surface text-surface py-20 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <span class="font-headline text-2xl font-bold text-white block mb-6">Aura Vent Ltd</span>
+                    <p class="font-body text-surface-variant opacity-70 mb-8 max-w-xs leading-relaxed">
+                        Leading the way in residential ventilation across the UK. Precision engineering for healthy homes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors rounded-none">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Links</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="index.html" class="opacity-60 hover:opacity-100 transition-opacity">Home</a></li>
+                        <li><a href="services.html" class="opacity-60 hover:opacity-100 transition-opacity">Services</a></li>
+                        <li><a href="maintenance.html" class="opacity-60 hover:opacity-100 transition-opacity">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="about.html" class="opacity-60 hover:opacity-100 transition-opacity">About</a></li>
+                        <li><a href="experience.html" class="opacity-60 hover:opacity-100 transition-opacity">Experience</a></li>
+                        <li><a href="contact.html" class="opacity-60 hover:opacity-100 transition-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <p class="text-sm opacity-60 mb-6 leading-relaxed">Get the latest insights on home ventilation and air quality.</p>
+                    <form class="flex border border-outline-variant rounded-none">
+                        <input type="email" placeholder="Email Address" class="bg-transparent px-4 py-3 flex-grow text-sm outline-none rounded-none text-white">
+                        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-none">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm opacity-50">© <span id="copyright-year">2024</span> Aura Vent Ltd. All Rights Reserved.</p>
+                <div class="flex gap-8 text-xs opacity-50 uppercase tracking-widest">
+                    <a href="privacy.html" class="hover:opacity-100">Privacy Policy</a>
+                    <a href="terms.html" class="hover:opacity-100 font-bold">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

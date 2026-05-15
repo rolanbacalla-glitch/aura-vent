@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us - Aura Vent Ltd</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col transition-colors duration-300">
+    <!-- TopNavBar -->
+    <header id="main-header" class="w-full top-0 sticky z-50 glass-nav transition-all duration-300">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-3 font-headline text-2xl font-bold text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="index.html">
+                <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-xl">
+                    <span class="material-symbols-outlined text-white">cyclone</span>
+                </div>
+                Aura Vent Ltd
+            </a>
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="maintenance.html">Maintenance</a>
+                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link nav-link-active" href="contact.html">Contact</a>
+            </nav>
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="p-2.5 text-primary dark:text-primary-fixed hover:bg-primary/10 dark:hover:bg-primary-fixed/10 transition-all rounded-full flex items-center justify-center group" aria-label="Toggle Theme">
+                    <span class="material-symbols-outlined transition-transform duration-500 group-hover:rotate-12">dark_mode</span>
+                </button>
+                <!-- Action Button -->
+                <a class="hidden md:inline-flex bg-primary text-white font-headline text-button px-6 py-3 hover:bg-primary-container transition-all items-center justify-center scale-95 hover:scale-100 duration-200 uppercase tracking-widest shadow-lg shadow-primary/20" href="contact.html">
+                    Request Quote
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="md:hidden text-primary dark:text-primary-fixed p-2 rounded-full hover:bg-primary/5 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] translate-x-full md:hidden flex flex-col p-margin-mobile bg-surface-container-lowest dark:bg-inverse-surface transition-transform duration-500 ease-in-out">
+        <div class="flex justify-between items-center mb-12">
+            <span class="font-headline text-2xl font-bold text-primary dark:text-primary-fixed flex items-center gap-2">
+                <span class="material-symbols-outlined">cyclone</span>
+                Aura Vent Ltd
+            </span>
+            <button id="mobile-menu-close" class="p-2 text-primary dark:text-primary-fixed rounded-full hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="maintenance.html">Maintenance</a>
+            <a class="mobile-nav-link" href="experience.html">Experience</a>
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link mobile-nav-link-active" href="contact.html">Contact</a>
+        </nav>
+        <div class="mt-auto pb-12">
+            <a class="w-full bg-primary text-white font-headline text-button px-6 py-4 flex items-center justify-center uppercase tracking-widest shadow-xl" href="contact.html">
+                Request Quote
+            </a>
+        </div>
+    </div>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-16 pb-8">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-4">Get a technical consultation.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Connect with our engineering team for precise ventilation solutions. We provide thorough assessments and detailed proposals for residential mechanical systems.</p>
+</section>
+<!-- Technical Separator -->
+<div class="w-full h-px bg-outline-variant max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16"></div>
+<!-- Layout Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Area (8 cols) -->
+<div class="lg:col-span-8">
+<div class="bg-surface-container-lowest border border-outline-variant p-6 md:p-10">
+<div class="mb-8">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-2">PROJECT INQUIRY</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background">Request a detailed quote</h2>
+</div>
+<form id="consultation-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+<!-- Web3Forms Configuration -->
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<input type="hidden" name="subject" value="New Quote Request - Aura Vent Ltd">
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="flex flex-col">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="name">FULL NAME *</label>
+<input class="bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none placeholder-outline" id="name" name="full_name" placeholder="Enter your name" type="text" required />
+</div>
+<!-- Phone -->
+<div class="flex flex-col">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="phone">PHONE NUMBER *</label>
+<input class="bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none placeholder-outline" id="phone" name="phone_number" placeholder="Your contact number" type="tel" required />
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Email -->
+<div class="flex flex-col">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="email">EMAIL ADDRESS *</label>
+<input class="bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none placeholder-outline" id="email" name="email" placeholder="Enter your email" type="email" required />
+</div>
+<!-- Postcode -->
+<div class="flex flex-col">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="postcode">POSTCODE *</label>
+<input class="bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none placeholder-outline" id="postcode" name="postcode" placeholder="Site location" type="text" required />
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Service Needed -->
+<div class="flex flex-col relative">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="service">PRIMARY SERVICE *</label>
+<select class="appearance-none bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none w-full" id="service" name="primary_service" required>
+<option disabled="" selected="" value="">Select system type</option>
+<option value="mvhr">MVHR Installation</option>
+<option value="mev">MEV Systems</option>
+<option value="maintenance">System Maintenance</option>
+<option value="inspection">Diagnostic Inspection</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 top-7 flex items-center px-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+<!-- Property Type -->
+<div class="flex flex-col relative">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="property">PROPERTY TYPE *</label>
+<select class="appearance-none bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none w-full" id="property" name="property_type" required>
+<option disabled="" selected="" value="">Select building type</option>
+<option value="detached">Detached House</option>
+<option value="semi">Semi-Detached</option>
+<option value="terrace">Terraced</option>
+<option value="apartment">Apartment / Flat</option>
+<option value="newbuild">New Build Project</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 top-7 flex items-center px-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col">
+<label class="font-label-technical text-label-technical text-on-surface-variant mb-2" for="message">PROJECT DETAILS / ISSUES</label>
+<textarea class="bg-surface-bright border border-outline-variant text-on-background font-body-md text-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors rounded-none placeholder-outline resize-y" id="message" name="message" placeholder="Briefly describe the current ventilation setup or requirements..." rows="5"></textarea>
+</div>
+<!-- Form Response Message Container -->
+<div id="form-response" class="hidden p-4 border font-body-md text-body-md transition-all duration-300"></div>
+
+<!-- Submit Button -->
+<div class="pt-4 border-t border-outline-variant mt-8">
+<button class="w-full md:w-auto bg-primary text-white font-button text-button px-8 py-4 uppercase tracking-wider hover:bg-primary-container disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center gap-2" type="submit">
+                                <span>Request Quote</span>
+                            </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Contact Information Panel (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Info Block -->
+<div class="bg-surface-container-low border border-outline-variant p-6">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-6 border-b border-outline-variant pb-2">CONTACT DETAILS</span>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">call</span>
+<div>
+<span class="font-label-technical text-label-technical text-on-surface-variant block">PHONE SUPPORT</span>
+<a class="font-body-lg text-body-lg text-on-background font-bold hover:text-primary transition-colors" href="tel:+448001234567">0800 123 4567</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">mail</span>
+<div>
+<span class="font-label-technical text-label-technical text-on-surface-variant block">EMAIL INQUIRIES</span>
+<a class="font-body-md text-body-md text-on-background hover:text-primary transition-colors" href="mailto:rolan_b@hotmail.com">rolan_b@hotmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<span class="font-label-technical text-label-technical text-on-surface-variant block">HEADQUARTERS</span>
+<address class="font-body-md text-body-md text-on-background not-italic">
+                                    Unit 14, Apex Industrial Estate<br/>
+                                    Manchester<br/>
+                                    M17 1AB
+                                </address>
+</div>
+</div>
+</div>
+</div>
+<!-- Hours Block -->
+<div class="bg-surface-container-low border border-outline-variant p-6">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-6 border-b border-outline-variant pb-2">OPERATING HOURS</span>
+<ul class="space-y-3 font-body-md text-body-md text-on-background">
+<li class="flex justify-between">
+<span class="text-on-surface-variant">Monday - Friday</span>
+<span class="font-semibold">08:00 - 18:00</span>
+</li>
+<li class="flex justify-between">
+<span class="text-on-surface-variant">Saturday</span>
+<span class="font-semibold">09:00 - 13:00</span>
+</li>
+<li class="flex justify-between">
+<span class="text-on-surface-variant">Sunday</span>
+<span class="font-semibold text-outline">Closed</span>
+</li>
+</ul>
+</div>
+<!-- Reassurance Block -->
+<div class="bg-surface-container-high border-l-2 border-primary p-6">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-on-background text-lg">Prompt Response</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Our engineering team reviews all specifications and aims to provide a comprehensive, free, no-obligation quote within 24 hours.</p>
+</div>
+</div>
+</section>
+</main>
+    <!-- Footer Component -->
+    <footer class="bg-on-surface text-surface py-20 border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <span class="font-headline text-2xl font-bold text-white block mb-6">Aura Vent Ltd</span>
+                    <p class="font-body text-surface-variant opacity-70 mb-8 max-w-xs">
+                        Leading the way in residential ventilation across the UK. Precision engineering for healthy homes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Links</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="index.html" class="opacity-60 hover:opacity-100 transition-opacity">Home</a></li>
+                        <li><a href="services.html" class="opacity-60 hover:opacity-100 transition-opacity">Services</a></li>
+                        <li><a href="maintenance.html" class="opacity-60 hover:opacity-100 transition-opacity">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Company</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="about.html" class="opacity-60 hover:opacity-100 transition-opacity">About</a></li>
+                        <li><a href="experience.html" class="opacity-60 hover:opacity-100 transition-opacity">Experience</a></li>
+                        <li><a href="contact.html" class="opacity-60 hover:opacity-100 transition-opacity">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4">
+                    <h4 class="font-headline font-bold text-white mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                    <p class="text-sm opacity-60 mb-6">Get the latest insights on home ventilation and air quality.</p>
+                    <form class="flex border border-outline-variant">
+                        <input type="email" placeholder="Email Address" class="bg-transparent px-4 py-3 flex-grow text-sm outline-none">
+                        <button type="submit" class="bg-primary text-white px-6 py-3">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm opacity-50">© <span id="copyright-year">2024</span> Aura Vent Ltd. All Rights Reserved.</p>
+                <div class="flex gap-8 text-xs opacity-50 uppercase tracking-widest">
+                    <a href="privacy.html" class="hover:opacity-100">Privacy Policy</a>
+                    <a href="terms.html" class="hover:opacity-100">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body></html>
