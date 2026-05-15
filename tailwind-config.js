@@ -3,13 +3,13 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                "primary": "#00685f",
-                "primary-fixed": "#89f5e7",
-                "primary-fixed-dim": "#6bd8cb",
-                "on-primary-fixed-variant": "#005049",
-                "on-primary-fixed": "#00201d",
-                "primary-container": "#008378",
-                "on-primary-container": "#f4fffc",
+                "primary": "#1c1c1c",
+                "primary-fixed": "#e0e0e0",
+                "primary-fixed-dim": "#b0b0b0",
+                "on-primary-fixed-variant": "#333333",
+                "on-primary-fixed": "#0a0a0a",
+                "primary-container": "#404040",
+                "on-primary-container": "#f5f5f5",
                 "secondary": "#4059aa",
                 "secondary-fixed": "#dce1ff",
                 "secondary-fixed-dim": "#b6c4ff",
@@ -65,7 +65,7 @@ tailwind.config = {
                 "button": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "700" }]
             },
             backgroundImage: {
-                'gradient-premium': 'linear-gradient(135deg, #00685f 0%, #008378 100%)',
+                'gradient-premium': 'linear-gradient(135deg, #1c1c1c 0%, #404040 100%)',
                 'gradient-glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%)',
             }
         }

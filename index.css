@@ -4,8 +4,8 @@
 */
 
 :root {
-    --primary: #00685f;
-    --primary-fixed: #89f5e7;
+    --primary: #1c1c1c;
+    --primary-fixed: #e0e0e0;
     --on-surface-variant: #3d4947;
     --surface-variant: #d9e3f6;
     --surface: #f8f9ff;
@@ -180,11 +180,11 @@ body {
 
 /* Vibrant Gradients */
 .vibrant-gradient {
-    background: linear-gradient(135deg, var(--primary) 0%, #008378 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, #404040 100%);
 }
 
 .vibrant-gradient-hover:hover {
-    background: linear-gradient(135deg, #008378 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, #404040 0%, var(--primary) 100%);
 }
 
 /* Global Selection Style */
